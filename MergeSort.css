@@ -1,0 +1,239 @@
+/* Ensure the .mergeSection is a flex container */
+.mergeSection {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;    /* Center the children horizontally */
+    padding: 20px;
+    background-color: #155263; /* Optional: for better visibility */
+}
+
+.mergeSection .title {
+        font-family: 'Fugaz One', cursive;
+        color: #FFF4D9;
+        font-size: 56px;
+}
+.mergeSection h2 {
+    font-family: 'Fugaz One', cursive;
+    color: #155263;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mergeSectionspcspc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 80px;
+    background-color: #FFF4D9;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.mergeSectionspc{
+    background-color: #155263;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-section  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF4D9;
+    padding: 0px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 25rem;
+}
+
+.input-text {
+    text-align: center;
+}
+
+.array-input {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-grow: 0.5;
+}
+
+.array-box {
+    width: 100%;
+    height: 50%;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF4D9;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.array-output {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.output-section .array-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.output-section .array-element {
+    width: 10rem;
+    height: 35px;
+    background-color: #42d687;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 3px 0;
+}
+
+#animation-section, #merging-section, .comparison-section, .swapping-section {
+    background-color: #FFF4D9;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0px 25px;
+    height: 25rem;
+    box-sizing: border-box;
+}
+
+#animation-section {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#merging-section {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.comparison-section {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.swapping-section {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.array-row {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sub-array {
+    display: flex;
+    gap: 10px;
+    padding: 7px;
+    background-color: #F1D4E5;
+    border-radius: 5px;
+    margin: 0px 5px;
+}
+
+.array-element {
+    width: 50px;
+    height: 50px;
+    background-color: #73BBC9;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+/* Ensure that elements in the swapping-animation container are in a row */
+.swapping-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px; /* Ensure the gap between elements A and B */
+    position: relative;
+}
+
+.swapping-element {
+    position: absolute; /* Allow the elements to move independently */
+    width: 50px; /* Set your desired width */
+    height: 50px; /* Set your desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #73BBC9; /* Example color */
+    color: #fff;
+    border-radius: 5px;
+}
+

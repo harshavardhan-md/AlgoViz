@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="MergeSort.css">
+    <a href="https://storyset.com/people"></a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="chip"><div class="logo"><img src="IconAnimationNav.gif" alt=""></div></a>
+        <nav class="nav">
+            <a href="#home" class="chip">Home</a>
+            <a href="#Algorithms" class="chip">Algorithms</a>
+            <a href="#Team" class="chip">Team</a>
+            <a href="#LinkenIn" class="chip">LinkenIn</a>
+            <a href="#Contact" class="chip">Contact</a>
+        </nav>
+    </header>
+    <section class="hero"  id="home">
+        <div class="hero-image">
+            <img src="MergeSortHero.png" alt="Aesthetic Image">
+        </div>
+        <div class="hero-content">
+            <h1>Visualize MergeSort<br>Algorithm</h1>
+            <p>Understanding Mergesort by a simple yet asthetic Visualization</p>
+            <a href="#get-started" class="get-started">Let's Go</a>
+        </div>
+    </section>
+    <section class="mergeSection">
+    <h2 class="title">Merge Sort Visualization</h2>
+    <div class="mergeSectionspc">
+    <div class="container">
+        <div class="grid-container">
+            <div class="input-section">
+                <div class="input-text">
+                    <h2>Input Options</h2>
+                    <p>Custom Input or Randomize your input</p>
+                </div>
+                <div class="array-input">
+                    <input type="number" class="array-box" id="box1">
+                    <input type="number" class="array-box" id="box2">
+                    <input type="number" class="array-box" id="box3">
+                    <input type="number" class="array-box" id="box4">
+                    <input type="number" class="array-box" id="box5">
+                    <input type="number" class="array-box" id="box6">
+                </div>
+                <div class="buttons">
+                    <button id="randomize" class="button">🎲 Randomize</button>
+                    <button id="start" class="button">Start</button>
+                    <button id="clear" class="button">Clear</button>
+                </div>
+            </div>
+            <div class="output-section">
+                <div class="input-text">
+                    <h2>Output Section</h2>
+                </div>
+                <div id="output-display" class="array-row"></div>
+            </div>
+            
+            <div id="animation-section">
+                <h2>Splitting Section</h2>
+                <div id="array-display"></div>
+            </div>
+            <div id="merging-section">
+                <h2>Merging Section</h2>
+                <div id="merge-display"></div>
+            </div>
+            <div class="comparison-section">
+                <h2>Comparison Section</h2>
+                <div id="comparison-display"></div>
+            </div>
+            <div class="swapping-section">
+                <h2>Swapping Section</h2>
+                <div id="swapping-display"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="IconAnimation.gif" alt="Company Logo">
+        </div>
+        <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are AlgoViz an Open Source Project for understanding Algorithms with the help of Visualization.</p>
+        </div>
+        <div class="footer-info">
+            <h3>AlgoViz</h3>
+            <p>Address: Bangalore, India, Pin 560043</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com" class="social-icon" target="_blank">
+                <img src="assets/icons8-facebook-100.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank">
+                <img src="assets/icons8-twitter-64.png" alt="Twitter">
+            </a>
+            <a href="https://www.linkedin.com" class="social-icon" target="_blank">
+                <img src="assets/icons8-linkedin-100.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com" class="social-icon" target="_blank">
+                <img src="assets/icons8-instagram-100.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 AlgoViz. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="MergeSort.js"></script>
+</body>
+</html>

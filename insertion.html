@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insertion Sort Visualization</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #51007e;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      margin: 0;
+    }
+    h1 {
+      color: #e5d0ff;
+      margin-bottom: 20px;
+    }
+    #main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    #controls {
+      margin-bottom: 20px;
+    }
+    #container {
+      display: flex;
+      align-items: flex-end;
+      height: 200px;
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .bar {
+      width: 30px;
+      margin: 0 2px;
+      background-color: #dabcff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: #51007e;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+    .comparing {
+      background-color: #cca3ff !important;
+    }
+    .swapping {
+      background-color: #bf8bff !important;
+    }
+    .sorted {
+      background-color: #9f69ff !important;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    input {
+      width: 300px;
+      background-color: #e5d0ff;
+      color: #51007e;
+    }
+    button {
+      background-color: #9f69ff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #bf8bff;
+    }
+    #timer {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #e5d0ff;
+    }
+    #algorithm {
+      margin-left: 20px;
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 10px;
+      color: #51007e;
+      font-family: monospace;
+      font-size: 14px;
+    }
+    #algorithm pre {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Insertion Sort Visualization</h1>
+  <div id="controls">
+    <input type="text" id="inputArray" placeholder="Enter numbers separated by commas">
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+  </div>
+  <div id="main">
+    <div id="container"></div>
+    <div id="algorithm">
+      <pre>
+function insertionSort(arr) {
+    for (let i = 1; i < arr.length; i++) {
+        let key = arr[i];
+        let j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+    return arr;
+}
+      </pre>
+    </div>
+  </div>
+  <!-- <div id="timer">Time: 0s</div> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="insertion.js"></script>
+</body>
+</html>
